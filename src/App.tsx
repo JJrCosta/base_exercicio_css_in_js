@@ -1,4 +1,4 @@
-import { HeaderContainer } from './containers/Cabecalho/styles'
+import { Header } from './containers/Cabecalho'
 import Hero from './containers/Hero'
 import ListaVagas from './containers/ListaVagas'
 
@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <HeaderContainer />
+      <Header />
       <Hero />
       <Container>
         <ListaVagas />

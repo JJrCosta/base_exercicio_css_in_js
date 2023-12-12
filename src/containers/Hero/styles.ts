@@ -29,9 +29,13 @@ export const Section = styled.section`
 export const Div = styled.div`
   position: relative;
   color: #eee;
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
 
   @media (max-width: 768px) {
     font-size: 32px;
+    max-width: 80%;
   }
 `
 

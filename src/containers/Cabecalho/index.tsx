@@ -1,9 +1,7 @@
 import { HeaderContainer, MainTitle } from './styles'
 
-const Header = () => (
+export const Header = () => (
   <HeaderContainer>
     <MainTitle>EBAC Jobs</MainTitle>
   </HeaderContainer>
 )
-
-export default Header
