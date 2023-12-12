@@ -1,21 +1,21 @@
 import styled from 'styled-components'
 
 export const Card = styled.li`
-  border: 1px solid #a7727d;
-  background-color: #f9f5e7;
-  color: #a7727d;
+  border: 1px solid ${(props) => props.theme.secondary};
+  background-color: ${(props) => props.theme.primary};
+  color: ${(props) => props.theme.secondary};
   padding: 16px;
   transition: all ease 0.3s;
   border-radius: 8px;
 
   :hover {
-    background-color: #a7727d;
-    color: #f9f5e7;
+    background-color: ${(props) => props.theme.secondary};
+    color: ${(props) => props.theme.primary};
   }
 
   :hover a {
-    background-color: #f9f5e7;
-    color: #a7727d;
+    background-color: ${(props) => props.theme.primary};
+    color: ${(props) => props.theme.secondary};
   }
 `
 
@@ -25,8 +25,8 @@ export const VagaTitle = styled.h3`
 `
 
 export const VagaLink = styled.a`
-  background-color: #a7727d;
-  color: #f9f5e7;
+  background-color: ${(props) => props.theme.secondary};
+  color: ${(props) => props.theme.primary};
   display: inline-block;
   padding: 8px 16px;
   text-decoration: none;
@@ -37,8 +37,8 @@ export const VagaLink = styled.a`
   text-align: center;
 
   :hover {
-    background-color: #f9f5e7;
-    color: #a7727d;
+    background-color: ${(props) => props.theme.primary};
+    color: ${(props) => props.theme.secondary};
   }
 
   @media (max-width: 768px) {

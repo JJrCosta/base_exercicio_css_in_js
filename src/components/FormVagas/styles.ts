@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Form = styled.form`
   display: grid;
   grid-template-columns: 1fr auto;
-  background-color: #a7727d;
+  background-color: ${(props) => props.theme.secondary};
   padding: 32px;
   border-radius: 12px;
   margin-top: 40px;
@@ -15,16 +15,16 @@ export const Form = styled.form`
 
 export const Campo = styled.input`
   padding: 0 16px;
-  outline-color: #f9f5e7;
+  outline-color: ${(props) => props.theme.primary};
 `
 
 export const BtnPesquisar = styled.button`
-  background-color: #f9f5e7;
-  border: 1px solid #f9f5e7;
+  background-color: ${(props) => props.theme.primary};
+  border: 1px solid ${(props) => props.theme.primary};
   height: 40px;
   padding: 0 16px;
   font-size: 18px;
-  color: #a7727d;
+  color: ${(props) => props.theme.secondary};
   margin-left: 8px;
   cursor: pointer;
 
