@@ -35,7 +35,7 @@ export const Div = styled.div`
 
   @media (max-width: 768px) {
     font-size: 32px;
-    max-width: 80%;
+    max-width: 90%;
   }
 `
 

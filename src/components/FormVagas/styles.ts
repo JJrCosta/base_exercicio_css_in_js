@@ -7,6 +7,10 @@ export const Form = styled.form`
   padding: 32px;
   border-radius: 12px;
   margin-top: 40px;
+
+  @media (max-width: 420px) {
+    padding: 12px;
+  }
 `
 
 export const Campo = styled.input`
@@ -23,4 +27,8 @@ export const BtnPesquisar = styled.button`
   color: #a7727d;
   margin-left: 8px;
   cursor: pointer;
+
+  @media (max-width: 420px) {
+    padding: 5px;
+  }
 `
